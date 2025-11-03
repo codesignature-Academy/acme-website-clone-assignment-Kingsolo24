@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: screen;
+    height: 80px;
+    background-color: oklch(66.735% 0.11542 183.785 / 0.982);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+
+}
+.header-div{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.header-div ul{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    color: white;
+}
+.header-div ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.hero{
+display: flex;
+align-items: stretch;
+justify-content: space-between;
+height: 150vh;
+padding: 70px;
+background-color: #f4f4f4
+}
+.text-box{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f4f4f4;
+  text-size-adjust: inherit;
+  
+}
+.text-box p{
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height:0.9;
+    margin: 0; 
+    font-family: 'Arial', sans-serif;   
+}
+.image-box{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+.image-box img{
+    width: 100%;
+    height: 350px;
+    max-width: 350px;
+    border-radius: 10px;
+    padding-right: 1px;
+}
+.text-box .active{
+    color: #3341ff;
+    font-weight: bold;
+    text-size-adjust: inherit;
+    margin-left: 150px;
+    font-size: 40px;
+}
+.text-box .text{
+    font-weight: bold;
+    height: auto;
+    color: #333;
+    text-size-adjust: inherit;
+    margin-left: 150px;
+    font-size: 40px;
+
+
+    
+
+}
+.text-box .main{
+    font-size: 20px;
+    color: #333;
+    text-size-adjust: inherit;
+    margin-left: 150px;
+    
+}
+.text-box p:last-child{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+    text-size-adjust: inherit;
+    margin-left: 150px;
+}
+.Our-Rockets  h2{
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 100px;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+   .rockets-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px
+    }
+.rocket-card{
+    width: 270px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+border: 2px solid black;
+    
+}
+.rocket-card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 300px;
+    border-color: black;
+    gap: 5px;
+}
+.rocket-card h3{
+    font-size: 30px;
+    margin: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rocket-card p{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* TESTIMONIAL SECTION */
+.testimonials {
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+    color: #333;
+}
+
+/* Holds all testimonials together */
+.testimonial-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;    /* Center horizontally */
+  gap: 30px;              /* Space between testimonials */
+}
+
+/* Each testimonial + its author */
+.testimonial-wrapper {
+  width: 72%;
+  display: flex;
+  flex-direction: column; /* Stack box and name vertically */
+  align-items: flex-end;  /* Align name to the right */
+}
+
+/* The white box with the quote */
+.testimonial-card {
+  background-color: oklch(66.735% 0.11542 183.785 / 0.982);
+  color: white
+  width: 100%;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+  font-size: 33px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 0; /* No extra space inside */
+}
+
+/* Author name outside box */
+.author {
+  margin-top: 8px; /* Little space below box */
+  color: #333;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+}
+.contact-form label {
+   /* makes label start from left side */
+  font-weight: 300;
+  color: 
+  margin-bottom: 5px;
+  width: 100%;
+  font-size: 30px;
+  padding-bottom: 5000px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 30px;
+  font-family: inherit;
+  outline: none;
+  color:black
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid black;
+}
+.contact .contact-form{
+  max-width: 880px;
+  margin: 0 auto 30px auto;
+  text-align: left;
+  padding-left: 4px;
+}
+.contact-form button {
+  background-color: oklch(66.735% 0.11542 183.785 / 0.982);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer {
+  background-color:oklch(66.735% 0.11542 183.785 / 0.982); 
+  color: white;           
+  padding: 20px 40px; 
+  font-size: 20px;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 10000;
+}
+
+.footer-container {
+  display: flex;                
+  justify-content: space-between; 
+  align-items: flex-start;        
+  flex-wrap: wrap;             
+  gap: 50px;                      
+}
+
+.footer-left, .footer-middle, .footer-right {
+  flex: 1;           
+  min-width: 200px;
+  margin-left: 165px; 
+}
+.footer-middle nav {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  font-size: 23px;
+}
+.footer-middle nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+.footer-middle a {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  gap: 4px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.footer-middle a:hover {
+  color: #1FC69D;
+}
+.footer-right p {
+  margin-bottom: 45px;
+}
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
